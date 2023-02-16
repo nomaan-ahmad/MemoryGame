@@ -31,11 +31,11 @@ public class Game extends GameBehaviour{
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose difficulty: max length of the word allowed\nEasy -> 5 length\nMedium -> 10 length\nHard -> 15 length");
         System.out.println("Type Easy, medium or hard, if wrong input typed 'Easy' will be chosen by default");
-        String input = sc.nextLine();
+        String input = sc.nextLine().toLowerCase();
         switch (input) {
             default -> difficulty = Difficulty.EASY;
             case "medium" -> difficulty = Difficulty.MEDIUM;
-            case "Hard" -> difficulty = Difficulty.HARD;
+            case "hard" -> difficulty = Difficulty.HARD;
         }
     }
 
@@ -67,7 +67,7 @@ public class Game extends GameBehaviour{
             }
             for (int i = 0; i < this.cycle; i++) {
                 for (String names : players) {
-                    System.out.println("Give a word to the team " + names);
+                    System.out.println("Give a word to the team, " + names);
                     System.out.println("Word should not be greater than " + map.get(difficulty));
                     answer.add(getWord());
                 }
@@ -76,8 +76,8 @@ public class Game extends GameBehaviour{
             // Below statement will select any player randomly
             int rand = new Random().nextInt(players.size());
             String player = players.get(rand);
-            if (!challenge(answer, rand)) {
-                System.out.println(player + "successfully answered all words. Game will continue..");
+            if (challenge(answer, rand)) {
+                System.out.println(player + " successfully answered all words. Game will continue..");
             }else{
                 System.out.println("It looks like, " + player + " didn't able to answer");
                 System.out.println(player + " is eliminated");
@@ -130,7 +130,7 @@ public class Game extends GameBehaviour{
         System.out.println("Remember all words are case insensitive");
         List<String> temp = new ArrayList<>();
         for (int i = 0; i < wordLen; i++) {
-            System.out.println("Type " + i+1 +"th word");
+            System.out.println("Type " + (i+1) +"th word");
             temp.add(sc.nextLine().toLowerCase());
         }
         return temp;
