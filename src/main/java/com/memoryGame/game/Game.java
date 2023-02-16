@@ -78,6 +78,8 @@ public class Game extends GameBehaviour{
             String player = players.get(rand);
             if (challenge(answer, rand)) {
                 System.out.println(player + " successfully answered all words. Game will continue..");
+                System.out.println("Words given by players are " + answer);
+                System.out.println("You have to remember these words along with words in next subsequent cycles until game ends");
             }else{
                 System.out.println("It looks like, " + player + " didn't able to answer");
                 System.out.println(player + " is eliminated");
@@ -89,10 +91,11 @@ public class Game extends GameBehaviour{
     private void rules() {
         System.out.println("Rules is simple");
         System.out.println("""
-                There will multiple cycle in the game and in each cycle everyone has to say a word
+                \nThere will multiple cycle in the game and in each cycle everyone has to say a word
                 and everyone has remember each word in the same order.
                 When everybody is done with telling word then random person is selected and has to speak all words in the same order
-                if they successfully tell all words in same order then game continues and if not then they will be eliminated""");
+                if they successfully tell all words in same order then game continues and if not then they will be eliminated
+                """);
     }
 
     private String getWord() {

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66980362-a7ec-4fd5-bfbd-14d69ed0df5a" name="Changes" comment="Main method is ready" />
+    <list default="true" id="66980362-a7ec-4fd5-bfbd-14d69ed0df5a" name="Changes" comment="Bug fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676575101613</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Bug fixes">
+      <created>1676576207022</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676576207022</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,7 +131,8 @@
     <MESSAGE value="Created an abstract class to define Game behaviour" />
     <MESSAGE value="Game is almost completed" />
     <MESSAGE value="Main method is ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main method is ready" />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

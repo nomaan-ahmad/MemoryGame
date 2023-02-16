@@ -26,6 +26,9 @@ public class Player {
         for (int i = 0; i < numOfPlayers; i++) {
             players.add(r.randomName());
         }
+
+        System.out.println("System has generated names which are as follows:");
+        System.out.println(players + "\n");
     }
     public List<String> getPlayersName() {
         return players;
