@@ -6,9 +6,8 @@ import java.util.Scanner;
 
 public class Player {
     private List<String> players;
-    private int numOfPlayers;
-
-    Player(int numOfPlayers, boolean customName) {
+    private final int numOfPlayers;
+    public Player(int numOfPlayers, boolean customName) {
         this.numOfPlayers = numOfPlayers;
         if (customName) playerName();
         else createRandomName();
@@ -28,7 +27,6 @@ public class Player {
             players.add(r.randomName());
         }
     }
-
     public List<String> getPlayersName() {
         return players;
     }

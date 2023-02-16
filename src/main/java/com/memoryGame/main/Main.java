@@ -1,21 +1,23 @@
 package com.memoryGame.main;
 
-import java.util.Random;
+import com.memoryGame.game.*;
+import com.memoryGame.user.*;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            System.out.print(generateRandom(20) + " ");
-        }
-    }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many players are going to play?");
+        int numOfPlayers = sc.nextInt();
+        System.out.println("Do you want to give player name? If not, system will assign unique name to the players");
+        System.out.println("Type 'Yes' or 'NO'! Wrong input will select NO by default");
+        Player p;
+        String ans = sc.nextLine().toLowerCase();
+        if (ans.equalsIgnoreCase("yes")) p = new Player(numOfPlayers,true);
+        else p = new Player(numOfPlayers, false);
 
-    public static int generateRandom(int upperBound) {
-        return new Random().nextInt(upperBound);
-    }
-    private static boolean wordValidation(String word, int maxLen) {
-        // Checking for presence of number
-        String regex = String.format("[a-z]{1,%s}", maxLen);
-        System.out.println(regex);
-        return word.matches(regex);
+        Game game = new Game(p.getPlayersName());
+        game.startGame();
     }
 }

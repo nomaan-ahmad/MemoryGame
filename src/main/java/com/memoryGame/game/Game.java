@@ -1,11 +1,9 @@
 package com.memoryGame.game;
 
 import java.util.*;
-import java.util.regex.Pattern;
 
 public class Game extends GameBehaviour{
-    private List<String> players;
-    private int numOfPlayers;
+    private final List<String> players;
     private Difficulty difficulty;
     private int cycle;
 
@@ -14,7 +12,7 @@ public class Game extends GameBehaviour{
     private enum Difficulty {
         EASY,
         MEDIUM,
-        HARD;
+        HARD
     }
     private final HashMap<Difficulty, Integer> map = new HashMap<>();
 
@@ -23,9 +21,8 @@ public class Game extends GameBehaviour{
         map.put(Difficulty.MEDIUM, 10);
         map.put(Difficulty.HARD, 15);
     }
-    Game(List<String> players, int numOfPlayers) {
+    public Game(List<String> players) {
         this.players = players;
-        this.numOfPlayers = numOfPlayers;
         askDifficulty();
         askCycle();
     }
@@ -76,7 +73,7 @@ public class Game extends GameBehaviour{
                 }
             }
 
-            // Below line will select any player randomly
+            // Below statement will select any player randomly
             int rand = new Random().nextInt(players.size());
             String player = players.get(rand);
             if (!challenge(answer, rand)) {
