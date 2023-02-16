@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66980362-a7ec-4fd5-bfbd-14d69ed0df5a" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/memoryGame/game/Game.java" afterDir="false" />
+    <list default="true" id="66980362-a7ec-4fd5-bfbd-14d69ed0df5a" name="Changes" comment="Created an abstract class to define Game behaviour">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/memoryGame/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/memoryGame/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/memoryGame/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/memoryGame/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,26 @@
     "project.structure.side.proportion": "0.38045976"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.memoryGame.main.Main" />
+      <module name="MemoryGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.memoryGame.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676477192146</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Some initial user input functionality implemented">
+      <created>1676479226809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676479226809</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created an abstract class to define Game behaviour">
+      <created>1676480767838</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676480767838</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,6 +110,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Some initial user input functionality implemented" />
+    <MESSAGE value="Created an abstract class to define Game behaviour" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created an abstract class to define Game behaviour" />
   </component>
 </project>

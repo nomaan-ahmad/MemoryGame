@@ -1,24 +1,21 @@
 package com.memoryGame.main;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        enum level {
-            EASY, MEDIUM, HARD
+        for (int i = 0; i < 5; i++) {
+            System.out.print(generateRandom(20) + " ");
         }
+    }
 
-        Scanner in = new Scanner(System.in);
-        level diff;
-        int n = in.nextInt();
-        switch (n) {
-            default -> diff = level.EASY;
-            case 2 -> diff = level.MEDIUM;
-            case 3 -> diff = level.HARD;
-        }
-
-        if (diff == level.EASY) {
-
-        }
+    public static int generateRandom(int upperBound) {
+        return new Random().nextInt(upperBound);
+    }
+    private static boolean wordValidation(String word, int maxLen) {
+        // Checking for presence of number
+        String regex = String.format("[a-z]{1,%s}", maxLen);
+        System.out.println(regex);
+        return word.matches(regex);
     }
 }
