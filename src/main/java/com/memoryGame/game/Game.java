@@ -2,7 +2,7 @@ package com.memoryGame.game;
 
 import java.util.*;
 
-public class Game extends GameBehaviour{
+public class Game implements GameBehaviourI{
     private final List<String> players;
     private Difficulty difficulty;
     private int cycle;
