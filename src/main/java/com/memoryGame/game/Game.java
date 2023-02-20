@@ -88,7 +88,7 @@ public class Game implements GameBehaviourI{
         }
     }
 
-    private void rules() {
+    public void rules() {
         System.out.println("Rules is simple");
         System.out.println("""
                 \nThere will multiple cycle in the game and in each cycle everyone has to say a word
