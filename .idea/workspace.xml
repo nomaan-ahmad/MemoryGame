@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66980362-a7ec-4fd5-bfbd-14d69ed0df5a" name="Changes" comment="Added content in README.md">
+    <list default="true" id="66980362-a7ec-4fd5-bfbd-14d69ed0df5a" name="Changes" comment="Minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/memoryGame/game/GameBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/memoryGame/game/GameBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/memoryGame/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/memoryGame/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/memoryGame/user/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/memoryGame/user/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -39,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "D:/EPAM/Project/MemoryGame",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.38045976"
   }
@@ -136,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676638726937</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changed Abstract classes with Interfaces">
+      <created>1676873127729</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676873127729</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Minor changes">
+      <created>1676873213110</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676873213110</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +175,8 @@
     <MESSAGE value="Version 1.0" />
     <MESSAGE value="Minor bug fixes 1.1" />
     <MESSAGE value="Added content in README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added content in README.md" />
+    <MESSAGE value="Changed Abstract classes with Interfaces" />
+    <MESSAGE value="Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
   </component>
 </project>
